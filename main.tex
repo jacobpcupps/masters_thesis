@@ -1,0 +1,108 @@
+\documentclass[12pt]{report}
+
+%---------Packages----------%
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[english]{babel}
+\usepackage{csquotes}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage[letterpaper, left=1in, right=1in, top=1in, bottom=1in]{geometry}
+\usepackage{lipsum}
+\usepackage{booktabs}
+\usepackage{amsmath}
+\usepackage{setspace}
+\usepackage{longtable}
+
+
+%---------TitleSec----------%
+
+\usepackage[explicit]{titlesec}
+\titleformat{\chapter}[display]{\bfseries\centering}{\Huge Chapter \thechapter:}{1em}{\Huge #1}
+
+%---------FancyHdr----------%
+
+%\usepackage{fancyhdr}
+%\pagestyle{fancy}
+%\fancyhead{}
+%\fancyhead[L]{\nouppercase{\leftmark}}
+%\fancyhead[R]{Sound of the Underground}
+%\fancyfoot{}
+%\fancyfoot[L]{Jacob P. Cupps}
+%\fancyfoot[R]{\thepage}
+%\renewcommand{\headrulewidth}{0.4pt}
+%\renewcommand{\footrulewidth}{0.4pt}
+%\renewcommand{\chaptermark}[1]{\markboth{#1}{}}
+
+%---------BibLaTeX----------%
+
+\usepackage[notes, backend=biber]{biblatex-chicago}
+\bibliography{references.bib}
+
+%---------Epigraph----------%
+
+\usepackage{epigraph}
+\AtBeginDocument{\renewcommand {\epigraphflush}{center}}
+\setlength \epigraphwidth {0.6\linewidth}
+\setlength\epigraphrule{0pt}
+
+%----------DOCUMENT---------%
+\begin{document}
+\pagenumbering{roman}
+\thispagestyle{empty}
+\input{chapters/titlepage}
+\frenchspacing
+
+%-------Front Matter--------%
+\setcounter{page}{2}
+  %----_TOC, Lists-----%
+    \tableofcontents
+    \listoffigures
+    \addcontentsline{toc}{chapter}{List of Figures}
+    \listoftables
+    \addcontentsline{toc}{chapter}{List of Tables}
+
+%\doublespacing
+  %--Acknowledgements--%
+    \chapter*{Acknowledgements}
+    \addcontentsline{toc}{chapter}{Acknowledgements}
+
+ This project is indebted to an always-growing number of people who influence, encourage, and inspire me. First, I would like to thank my advisor for this project, Paul Steinbeck, as well as my second readers, Lauren Eldridge-Stewart and Christopher Stark. The classes I've taken as well as the time I've spent discussing this project with each of them have helped shape this project in distinct and insightful ways. My thanks also goes out to the academic mentors I've connected with at Washington University in St. Louis, including Paula Harper, Alexander Stefaniak, and Pat Burke, all of whom have read this project at some point along its development.
+ 
+I adamantly believe this project would not be what it is without the camaraderie of the graduate students in Wash U's department of music. I am thankful to my colleagues for the many hours of discussion and collaboration inside and outside of class, in addition to their commitment toward making our department an inclusive and amenable space. I also appreciate the efforts of the graduate writing group, who read the second and third chapters of this in (very) rough draft form and provided criticism and feedback. Chiefly, I am grateful for my peers Varun Chandrasekhar and Eden Attar, both of whom spent far too much time with me rambling on about the music I've studied in this project.
+
+  %-----Abstract-----%
+    \chapter*{Abstract}
+    \addcontentsline{toc}{chapter}{Abstract}
+    \lipsum[0-1]
+
+%---------------------------%
+\chapter{Introduction}
+\pagenumbering{arabic}
+\input{chapters/chp-01}
+
+\chapter[Beat Construction and Alteration]{Beat Construction and Modes of Alteration in the Underground}
+\input{chapters/chp-02}
+
+%\chapter{Chapter 3}
+%\input{chapters/chp-03}
+
+%\chapter{Chapter 4}
+%\input{chapters/chp-04}
+
+%\chapter{Conclusion}
+%\input{chapters/chp-05}
+
+%---------------------------%
+
+\printbibliography
+\addcontentsline{toc}{chapter}{Bibliography}
+\nocite{*}
+
+%---------------------------%
+\chapter*{Appendix}
+\input{chapters/app-01}
+\addcontentsline{toc}{chapter}{Appendix}
+
+\end{document}
