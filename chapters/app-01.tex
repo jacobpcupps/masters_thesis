@@ -1,100 +1,110 @@
-\begin{center}
-\begin{longtable}{|l|l|l|}
-\caption{A sample long table.} \label{tab:long} \\
+\appendix
+\renewcommand{\thetable}{A.\arabic{table}}
+\setcounter{table}{0}
 
-\hline \multicolumn{1}{|c|}{\textbf{First column}} & \multicolumn{1}{c|}{\textbf{Second column}} & \multicolumn{1}{c|}{\textbf{Third column}} \\ \hline 
-\endfirsthead
+\begin{table}[h!]
+    \tiny
+    \centering
+\begin{tabular}{|c|c|c|c|c|c|}
+     \toprule
+     Timecode & DOOM & Lead Sample & Bass & Drums & Vocal Sample \\
+     \toprule 
+     0:00-0:14 & ``I get no kick\textellipsis'' & ||: ``Huit'' I :|| x4 & ||: ``Huit'' I :|| x4 & ||: ``Huit'' I :|| x4 &  \\
+     \midrule
+     0:15-0:17 & ``I get a kick outta\textellipsis'' & •//• x1 & •//• x1 & •//• x1 & \\
+     \midrule 
+     0:18-0:19 & ``brew!'' & & & & \\
+     \midrule
+     0:20-0:40 & ``There's only one beer\textellipsis'' & ||: ``Huit'' II :|| & ||: ``Huit'' II :|| & ||: ``Huit'' II :|| &  \\
+     \midrule
+     0:41-1:01 & ``Told him tell 'em\textellipsis'' & •//• x2 & •//• x2 & •//• x2 & \\
+     \midrule
+     1:02-1:21 & ``He went to go laugh\textellipsis'' & •//• x2 & •//• x2 & •//• x2 & \\ 
+     \midrule
+     1:22-1:42 & ``(skeezer) eye, and squeeze\textellipsis'' & •//• x2 & •//• x2 & •//• x2 & \\
+     \midrule
+     1:43-1:57 & ``Looser than a pair\textellipsis'' & ||: ``Huit'' I :|| x4 & ||: ``Huit'' I :|| x4 & ||: ``Huit'' I :|| x4 & \\
+     \midrule
+     1:58-1:59 & ``Few could do it\textellipsis'' & •//• x1 & •//• x1 & •//• x1 & \\
+     \midrule
+      2:00-2:02 & ``Take it from the dude\textellipsis'' & •//• x1* & •//• x1* & •//• x1* & \\
+     \midrule
+     2:03-2:23 & ``He plot shows like...\textellipsis'' & ||: ``Huit'' II :|| & ||: ``Huit'' II :|| & ||: ``Huit'' II :|| & \\
+     \midrule
+     2:24-2:44 & & •//• x2 & •//• x2 & •//• x2 & \\
+     \midrule
+     2:45-3:05 & & •//• x2 & •//• x2 & •//• x2 & \textit{Spider-man} I \\
+     \midrule
+     3:06-3:50 & & ||: \textit{Spider-Man} :|| x8 & SP-303 & MPC & \textit{Spider-man} II \\
+     \midrule
+     3:51-3:55 & & •//• x1* & •//• x1* & •//• x1* & ``Your attempts\textellipsis'' \\
+     \midrule
+     3:56-4:18 & & •//• x4  & •//• x4 & •//• x4 & \textit{Spider-man} III \\
+     \bottomrule
+\end{tabular}
 
-\multicolumn{3}{c}%
-{{\bfseries \tablename\ \thetable{} -- continued from previous page}} \\
-\hline \multicolumn{1}{|c|}{\textbf{First column}} & \multicolumn{1}{c|}{\textbf{Second column}} & \multicolumn{1}{c|}{\textbf{Third column}} \\ \hline 
-\endhead
+\hfill{*choked on last two beats}
+    \caption{Full roadmap to MF DOOM and Madlib's ``One Beer''}
+    \label{tab:A1}
+\end{table}
+\clearpage
 
-\hline \multicolumn{3}{|r|}{{Continued on next page}} \\ \hline
-\endfoot
+\begin{table}[h!]
+    \centering
+    \tiny
+\begin{tabular}{c|c|c|c|c|c|c}
+     Timecode & Kendrick & Lead Sample & Drums & Bass & Synth & SFX \\
+     \toprule 
+      0:00-0:10 & ``Alright, here we go\textellipsis''* & ||: ``Thorn'' I :|| x4 & & & & \\
+     \midrule
+      0:11-0:15  & ``Got me breathin'\textellipsis''* & •//• x2  & & & & \\
+     \midrule
+     0:16-0:26 & ``(bas)tard, I'm Marilyn\textellipsis'' & ||: ``Thorn'' II :|| & & & & \\
+     \midrule
+     0:27-0:32 & ``this is rigor\textellipsis'' & •//• x1 & & & & Filter Sweep** \\
+     \midrule 
+     0:33-0:42 & ``orbit, you an\textellipsis'' & •//• x2 & ||: 2-bar boom-bap† :|| & & & \\
+     \midrule
+     0:43-0:53 & ``(for)gin' all my\textellipsis'' & •//• x2† & ||: 2-bar boom-bap :|| & Low A Drone & & \\
+     \midrule
+     0:53-0:58 & ``(suit and) tie  are\textellipsis'' & •//• x1† & •//• x1 & & & ``Hey!'' Off-beats \\
+     \midrule
+     0:59-1:04 & ``(He) dead! Amen! \textellipsis'' & •//• x1† & •//• x1 & & & •//• \\       
+    \midrule
+     1:05-1:15 & ``(Ferra)gami\textellipsis'' & •//• x2† & •//• x2 & •//• & & \\
+     \midrule
+     1:16-1:25 & ``(Wrest)ling? That's\textellipsis'' & •//• x2† & •//• x2 & & & •//•* \\ 
+     \midrule
+     1:26-1:30 & ``(He) dead! Yup yup!\textellipsis'' & •//• x1† & •//• x1 & •//• & G-A, D-A & \\
+     \midrule
+     1:31-1:41 & ``Got me breathin'\textellipsis'' & •//• x2† & •//• x2 & •//• & •//• & Delay Throw** \\
+     \midrule
+     1:43-1:47 & ``Got me breathin'\textellipsis'' & •//• x1† & 2-bar boom-bap & & & \\
+     \midrule
+     1:48-1:57 & ``I rapped 'em\textellipsis'' & •//• x2† & •//• x2 & •//• & & \\
+     \midrule
+     1:58-2:08 & ``my casualty, and it's\textellipsis'' & •//• x2† & •//• x2 & & & ``Hey!'' + Dly** \\
+     \midrule
+     2:09-2:19 & ``And I go visit\textellipsis'' & •//• x2† & 32nd-note fill** & A subs & & ``Hey!'' Off-beats \\
+     \midrule
+     2:20-2:30 & ``(men)tion, how the far\textellipsis'' & •//• x2† & ||: 2-bar boom-bap :|| & & •//• & •//• \\
+     \midrule
+     2:31-2:35 & ``(He) dead! Yup yup!\textellipsis'' &  •//• x1† & •//• x1 & & \\  
+     \midrule
+     2:36-2:41 & ``Got me breathin'\textellipsis'' & •//• x1† & •//•x1 & & &\\
+     \midrule
+     2:42-2:47 & ``(He) dead! Yup yup!\textellipsis'' & •//• x1† & •//•x1† & & \\ 
+     \bottomrule
+\end{tabular}
 
-\hline \hline
-\endlastfoot
+\hfill{*enters at the 2nd sample repetition}
 
-One & abcdef ghjijklmn & 123.456778 \\
-One & abcdef ghjijklmn & 123.456778 \\
-One & abcdef ghjijklmn & 123.456778 \\
-One & abcdef ghjijklmn & 123.456778 \\
-One & abcdef ghjijklmn & 123.456778 \\
-One & abcdef ghjijklmn & 123.456778 \\
-One & abcdef ghjijklmn & 123.456778 \\
-One & abcdef ghjijklmn & 123.456778 \\
-One & abcdef ghjijklmn & 123.456778 \\
-One & abcdef ghjijklmn & 123.456778 \\
-One & abcdef ghjijklmn & 123.456778 \\
-One & abcdef ghjijklmn & 123.456778 \\
-One & abcdef ghjijklmn & 123.456778 \\
-One & abcdef ghjijklmn & 123.456778 \\
-One & abcdef ghjijklmn & 123.456778 \\
-One & abcdef ghjijklmn & 123.456778 \\
-One & abcdef ghjijklmn & 123.456778 \\
-One & abcdef ghjijklmn & 123.456778 \\
-One & abcdef ghjijklmn & 123.456778 \\
-One & abcdef ghjijklmn & 123.456778 \\
-One & abcdef ghjijklmn & 123.456778 \\
-One & abcdef ghjijklmn & 123.456778 \\
-One & abcdef ghjijklmn & 123.456778 \\
-One & abcdef ghjijklmn & 123.456778 \\
-One & abcdef ghjijklmn & 123.456778 \\
-One & abcdef ghjijklmn & 123.456778 \\
-One & abcdef ghjijklmn & 123.456778 \\
-One & abcdef ghjijklmn & 123.456778 \\
-One & abcdef ghjijklmn & 123.456778 \\
-One & abcdef ghjijklmn & 123.456778 \\
-One & abcdef ghjijklmn & 123.456778 \\
-One & abcdef ghjijklmn & 123.456778 \\
-One & abcdef ghjijklmn & 123.456778 \\
-One & abcdef ghjijklmn & 123.456778 \\
-One & abcdef ghjijklmn & 123.456778 \\
-One & abcdef ghjijklmn & 123.456778 \\
-One & abcdef ghjijklmn & 123.456778 \\
-One & abcdef ghjijklmn & 123.456778 \\
-One & abcdef ghjijklmn & 123.456778 \\
-One & abcdef ghjijklmn & 123.456778 \\
-One & abcdef ghjijklmn & 123.456778 \\
-One & abcdef ghjijklmn & 123.456778 \\
-One & abcdef ghjijklmn & 123.456778 \\
-One & abcdef ghjijklmn & 123.456778 \\
-One & abcdef ghjijklmn & 123.456778 \\
-One & abcdef ghjijklmn & 123.456778 \\
-One & abcdef ghjijklmn & 123.456778 \\
-One & abcdef ghjijklmn & 123.456778 \\
-One & abcdef ghjijklmn & 123.456778 \\
-One & abcdef ghjijklmn & 123.456778 \\
-One & abcdef ghjijklmn & 123.456778 \\
-One & abcdef ghjijklmn & 123.456778 \\
-One & abcdef ghjijklmn & 123.456778 \\
-One & abcdef ghjijklmn & 123.456778 \\
-One & abcdef ghjijklmn & 123.456778 \\
-One & abcdef ghjijklmn & 123.456778 \\
-One & abcdef ghjijklmn & 123.456778 \\
-One & abcdef ghjijklmn & 123.456778 \\
-One & abcdef ghjijklmn & 123.456778 \\
-One & abcdef ghjijklmn & 123.456778 \\
-One & abcdef ghjijklmn & 123.456778 \\
-One & abcdef ghjijklmn & 123.456778 \\
-One & abcdef ghjijklmn & 123.456778 \\
-One & abcdef ghjijklmn & 123.456778 \\
-One & abcdef ghjijklmn & 123.456778 \\
-One & abcdef ghjijklmn & 123.456778 \\
-One & abcdef ghjijklmn & 123.456778 \\
-One & abcdef ghjijklmn & 123.456778 \\
-One & abcdef ghjijklmn & 123.456778 \\
-One & abcdef ghjijklmn & 123.456778 \\
-One & abcdef ghjijklmn & 123.456778 \\
-One & abcdef ghjijklmn & 123.456778 \\
-One & abcdef ghjijklmn & 123.456778 \\
-One & abcdef ghjijklmn & 123.456778 \\
-One & abcdef ghjijklmn & 123.456778 \\
-One & abcdef ghjijklmn & 123.456778 \\
-One & abcdef ghjijklmn & 123.456778 \\
-One & abcdef ghjijklmn & 123.456778 \\
-One & abcdef ghjijklmn & 123.456778 \\
-One & abcdef ghjijklmn & 123.456778 \\
-\end{longtable}
-\end{center}
+\hfill{**enters on the last two beats}
+
+\hfill{†sample is choked, shifted, or otherwise altered}
+    \caption{Roadmap to Kendrick Lamar and Willie B's ``Rigamortis.''}
+    \label{tab:2}
+\end{table}
+
+
+\newpage
