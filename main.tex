@@ -7,7 +7,7 @@
 \usepackage[english]{babel}
 \usepackage[letterpaper, margin=1in]{geometry}
 \usepackage[normalem]{ulem}
-\usepackage{lmodern, csquotes, graphicx, hyperref, lipsum, booktabs, amsmath, setspace, rotating}
+\usepackage{lmodern, csquotes, graphicx, lipsum, booktabs, amsmath, setspace, rotating}
 
 %---------TitleSec----------%
 
@@ -39,6 +39,15 @@
 \AtBeginDocument{\renewcommand {\epigraphflush}{center}}
 \setlength \epigraphwidth {0.6\linewidth}
 \setlength\epigraphrule{0pt}
+
+%---------Verse------------%
+
+\usepackage{verse}
+\renewcommand*{\theHpoemline}{\arabic{verse@envctr}.\arabic{poemline}}
+
+%---Hyperref, after Verse--%
+
+\usepackage{hyperref}
 
 %----------DOCUMENT---------%
 
